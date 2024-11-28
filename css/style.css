@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #1c1c1c, #333);
+    font-family: "Roboto", sans-serif;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#contenedor {
+    
+    text-align: center;
+    border: 5px solid #ff4500;
+    border-radius: 10px;
+    padding: 20px 20px 20px 10px;
+    background: #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    max-width: 400px;
+}
+
+  
+#display {
+    font-size: 4rem;
+    font-weight: bold;
+    background: #000;
+    color: #ffcc00;
+    border: 3px solid #ff4500;
+    border-radius: 5px;
+    padding: 40px;
+    
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000, 0 0 20px #ffcc00;
+}
+
+
+#botonera {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    background: #444;
+    color: #fff;
+    border: 2px solid #ff4500;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+button:hover {
+    background: #ff4500;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff4500;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+ 
+#contenedor:before {
+    content: "🔥 Rock & Roll 🔥";
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 1px 1px 5px #ff4500, 0 0 10px #fff;
+}
